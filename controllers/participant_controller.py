@@ -16,6 +16,8 @@ def route(command):
         update()
     elif command in commands.DELETE:
         delete()
+    else:
+        print("Comando '%s' não reconhecido" %command)
 
 def delete():
     print('- Digite o índice do participante que deseja excluir')

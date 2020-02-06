@@ -1,6 +1,6 @@
 import os
-import commands
 import random
+import commands
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 path_connection = os.path.join(
@@ -37,3 +37,4 @@ def random_participant():
 
 def clear():
     open(path_file_raffles, 'w').close()
+    print('Lista de sorteados limpa com sucesso!')
